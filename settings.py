@@ -78,7 +78,7 @@ INSTALLED_APPS = (
     #'cts_app.cts_testing',
     #'cts_app.cts_api',
     'splash_app',
-    #'hem_app',
+    'pisces_app',
     #'ubertool_app',
     #'hwbi_app',
 )
