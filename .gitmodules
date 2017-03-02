@@ -1,12 +1,10 @@
-[submodule "pisces_app"]
-	path = pisces_app
-	url = https://github.com/quanted/pisces_app.git
-[submodule "splash_app"]
-	path = splash_app
-	url = https://github.com/quanted/splash_app.git
 [submodule "templates_qed"]
 	path = templates_qed
 	url = https://github.com/quanted/templates_qed.git
 [submodule "static_qed"]
 	path = static_qed
 	url = https://github.com/quanted/static_qed.git
+[submodule "pisces_app"]
+	path = pisces_app
+	url = https://github.com/quanted/pisces_app.git
+	branch = master

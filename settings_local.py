@@ -1,12 +1,9 @@
 """
 Django settings for QED project when developing.
-
 NOTE: Make sure PyCharm django config is pointing to settings_local.py
 instead of settings.py
-
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
-
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
 """
@@ -30,11 +27,11 @@ os.environ.update({
     'SITE_SKIN': 'EPA',                          # Leave empty ('') for default skin, 'EPA' for EPA skin
     'CONTACT_URL': 'https://www.epa.gov/research/forms/contact-us-about-epa-research',
 
-    'CTS_TEST_SERVER': 'http://134.67.114.6:8080',
-    'CTS_EPI_SERVER': 'http://134.67.114.8',
-    'CTS_JCHEM_SERVER': 'http://134.67.114.2',
-    'CTS_EFS_SERVER': 'http://134.67.114.2',
-    'CTS_SPARC_SERVER': 'http://204.46.160.69:8080',
+    # 'CTS_TEST_SERVER': 'http://134.67.114.6:8080',
+    # 'CTS_EPI_SERVER': 'http://134.67.114.8',
+    # 'CTS_JCHEM_SERVER': 'http://134.67.114.2',
+    # 'CTS_EFS_SERVER': 'http://134.67.114.2',
+    # 'CTS_SPARC_SERVER': 'http://204.46.160.69:8080',
     # 'CTS_VERSION': '1.8'  # now set at settings.py
 })
 
