@@ -113,6 +113,7 @@ INSTALLED_APPS = (
     # 'docs',
     # 'rest_framework_swagger',
     # 'hwbi_app',
+    'django.contrib.gis',
     'pisces_app',
 )
 
@@ -138,9 +139,20 @@ WSGI_APPLICATION = 'wsgi_local.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(PROJECT_ROOT, 'db.sqlite3'),
+        'NAME': os.path.join(PROJECT_ROOT, 'db.sqlite3')
+    },
+    'pisces_db': {
+        #'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.contrib.gis.db.backends.spatialite',
+        'NAME': os.path.join(PROJECT_ROOT, 'pisces_app/models/pisces_db.sqlite3')
     }
 }
+
+DATABASE_ROUTERS = {'routers.PiscesRouter'}
+
+SPATIALITE_LIBRARY_PATH = 'E:\GitHub\qed_pisces\pisces_app\models\mod_spatialite'
+
+#LD_LIBRARY_PATH = 'E:\GitHub\pisces_rest\pisces\sqlitemgr'
 
 # Authentication
 AUTH = False
