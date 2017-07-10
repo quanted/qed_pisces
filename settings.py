@@ -49,7 +49,7 @@ try:
     with open('secret_key_django_dropbox.txt') as f:
         SECRET_KEY = f.read().strip()
 except IOError as e:
-    print "Could not find secret file"
+    print("Could not find secret file")
     SECRET_KEY = 'Shhhhhhhhhhhhhhh'
     pass
 
@@ -210,8 +210,8 @@ NODEJS_PORT = None
 if DEBUG:
     import logging
     logging.basicConfig(
-        level = logging.DEBUG,
-        format = '%(asctime)s %(levelname)s %(message)s',
+        level=logging.DEBUG,
+        format='%(asctime)s %(levelname)s %(message)s',
     )
 
 try:

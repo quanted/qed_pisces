@@ -49,15 +49,15 @@ try:
     with open('secret_key_django_dropbox.txt') as f:
         SECRET_KEY = f.read().strip()
 except IOError as e:
-    print "Could not find secret file"
+    print("Could not find secret file")
     SECRET_KEY = 'Shhhhhhhhhhhhhhh'
 
     ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1'
-]
+        'localhost',
+        '127.0.0.1'
+    ]
 
-#IS_PUBLIC = True
+# IS_PUBLIC = True
 IS_PUBLIC = False
 
 WSGI_APPLICATION = 'wsgi_local.application'
@@ -71,6 +71,6 @@ SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 if DEBUG:
     import logging
     logging.basicConfig(
-        level = logging.DEBUG,
-        format = '%(asctime)s %(levelname)s %(message)s',
+        level=logging.DEBUG,
+        format='%(asctime)s %(levelname)s %(message)s',
     )
